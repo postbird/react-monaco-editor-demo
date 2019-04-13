@@ -42,13 +42,14 @@ class App extends Component {
         <div className="wrapper">
           <div className="editor-container">
             <MonacoEditor
+              theme="vs-dark"
               language="javascript"
               value={code}
               options={options}
               onChange={this.onChangeHandle}
               editorDidMount={this.editorDidMountHandle}/>
           </div>
-          <div className="view" contenteditable={true}>
+          <div className="view" contenteeitable={'true'}>
             {this.state.code}
           </div>
         </div>
